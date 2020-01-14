@@ -1,0 +1,40 @@
+body, html {
+  font-family: 'Exo 2', sans-serif;
+  background: #eee;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+#languages {
+  width: 400px;
+  margin: 0 auto;
+}
+
+article {
+  padding: 0 20px 10px 20px;
+}
+
+p {
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  background: rgb(70, 65, 65);
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}
+
+.writeup {
+  background: white;
+  padding: 10px;
+}

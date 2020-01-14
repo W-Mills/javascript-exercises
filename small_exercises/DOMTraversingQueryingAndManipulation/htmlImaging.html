@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- the html the scripts create: -->
+
+<html>
+
+<head>
+  <title>HTML Imaging</title>
+  <style type="text/css">
+    .emphasis {font-weight: bold; }
+    .light {color: gray; }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="emphasis light">Dynamic Content</h1>
+    <p>Hello World</p>
+  </header>
+</body>
+
+</html>
+
+
+<script>
+  var node1 = document.createElement('header');
+  var node2 = document.createTextNode('Dynamic Content');
+
+  node1.innerHTML = '<p>Hello World!</p>';
+  document.body.appendChild(node1);
+  document.body.firstElementChild.insertBefore(node2, node1.firstElementChild);
+
+  var node3 = document.createElement('h1'); // <h1></h1>
+  node3.appendChild(node2); // <h1>Dynamic Content</h1>
+  document.body.firstElementChild.insertBefore(node3, node1.firstElementChild);
+
+  node1.setAttribute('id', 'header');
+  node3.classList.add('emphasis');
+  node3.classList.add('light');
+
+  var node4 = document.createElement('style'); // <style></style>
+  var css1 = ".emphasis { font-weight: bold; }";
+  var css2 = ".light { color: gray; }";
+  node4.type = 'text/css'; // <style type="text/css"></style>
+
+  node4.appendChild(document.createTextNode(css1));
+  node4.appendChild(document.createTextNode(css2));
+
+  // <style type="text/css">
+  //   .emphasis {font - weight: bold; }
+  //   .light {color: gray; }
+  // </style>
+
+  document.head.appendChild(node4);
+</script>

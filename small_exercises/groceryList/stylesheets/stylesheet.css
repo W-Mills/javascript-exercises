@@ -1,0 +1,74 @@
+html,
+      body,
+      input,
+      button {
+        font-family: 'Varela Round', sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #99DBFF;
+      }
+
+      article {
+        background: #fff;
+        width: 400px;
+        margin: auto;
+        border-radius: 5px;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      input {
+        display: block;
+        padding: 5px;
+        margin: 5px 0;
+        height: 30px;
+        font-size: 20px;
+      }
+
+      h1,
+      h2, 
+      label {
+        color: #285EFF;
+      }
+
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      button {
+        width: 90%;
+        height: 50px;
+        color: #fff;
+        background: #285EFF;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 10px 0;
+        border-radius: 15px;
+      }
+
+      ul {
+        padding-bottom: 25px;
+      }
+
+      ul li {
+        margin-left: 40px;
+        padding: 2px;
+        color: #285EFF;
+      }
+      
+      .center {
+        text-align: center;
+      }
+
+      #item-name {
+        width: 90%;
+      }
+
+      #item-quantity {
+        width: 30px;
+      }

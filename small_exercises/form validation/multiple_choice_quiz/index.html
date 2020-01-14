@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="css_reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="handlebars-v4.1.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <fieldset>
+      <h1>Totally Awesome Quiz</h1>
+      <form id="quiz" action="#" method="post">
+        <span id="buttons">
+          <button id="submit">Check your answers</button>
+          <button id="quizReset">Reset</button>
+        </span>
+      </form>
+    </fieldset>
+
+    <script id="questionTemplate" type="text/x-handlebars-template">
+      <div class="question" data-id="{{id}}">
+        <p class="description">Q{{id}}. {{{description}}}</p>
+        {{#each options}}
+          <label>
+            <input type="radio" value="{{.}}" name="{{../id}}">
+            {{.}}
+          </label>
+        {{/each}}
+        <p class="result"></p>
+      </div>
+    </script>
+    <script src="mcq.js"></script>
+  </body>
+</html>

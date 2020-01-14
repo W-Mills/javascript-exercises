@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Form Validation Pt 2</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="handlebars-v4.1.2.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Sign up for something mega!</h1>
+    </header>
+    <fieldset>
+      <form action="#" method="post" novalidate>
+        <dl>
+          <dt>
+            <label for="first_name">First Name:</label>
+          </dt>
+          <dd>
+            <input id="first_name" type="text" name="first_name" placeholder="First Name" required>
+            <span class="error_message"></span>
+          </dd>          
+        </dl>
+        <dl>
+          <dt>
+            <label for="last_name">Last Name:</label>
+          </dt>
+          <dd>
+            <input id="last_name" type="text" name="last_name" placeholder="Last Name" required>
+            <span class="error_message"></span>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="email">Email Address:</label>
+          </dt>
+          <dd>
+            <input class="email" type="text" name="email" placeholder="myemail@mail.com" required pattern=".+@.+">
+            <span class="error_message"></span>
+          </dd>          
+        </dl>
+        <dl>
+          <dt>
+            <label for="password">Password:</label>
+          </dt>
+          <dd>
+            <input class="password" type="password" name="pw" required minlength="10">
+            <span class="error_message"></span>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for="phone">Phone Number:</label></dt>
+          <dd>
+            <input class="phone" type="text" name="phone" placeholder="123-345-6789" pattern="\d{3}-\d{3}-\d{4}">
+            <span class="error_message"></span>
+          </dd>
+        </dl>
+        <dl>
+          <dt><label for="creditcard"></label>Credit Card Number:</dt>
+          <dd>
+            <input class="creditcard autotab" name="creditcard" type="text" pattern="\d+" maxlength="4"><span>-</span>
+            <input class="creditcard autotab" name="creditcard" type="text" pattern="\d{4}" maxlength="4"><span>-</span>
+            <input class="creditcard autotab" name="creditcard" type="text" pattern="\d{4}" maxlength="4"><span>-</span>
+            <input class="creditcard" name="creditcard" type="text" pattern="\d{4}" maxlength="4">
+          </dd>
+        </dl>
+        <dl>
+          <button type="submit">Sign Up</button>
+        </dl>
+      </form>
+    </fieldset>
+    <div id="form_message_div">
+      <p id="form_message"></p>
+    </div>
+    <section class="serialized">
+      <p id="serialized_form"></p>
+    </section>
+    <script src="formPart2.js"></script>    
+  </body>
+</html>

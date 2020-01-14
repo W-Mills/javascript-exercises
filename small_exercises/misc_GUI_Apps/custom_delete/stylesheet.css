@@ -1,0 +1,90 @@
+body, html {
+  font-family: 'Exo 2', sans-serif;
+  background: #FFEBBD;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+ul {
+  width: 400px;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+li {
+  background: #EB8A83;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+}
+
+button {
+  height: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-shadow: 0 0 3px white;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#modal_confirm_delete {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+  z-index: 10;
+  padding: 2em;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+#context_menu {
+  /* display: none; */
+  position: relative;
+  width: 120px;
+  left: 0;
+  top: 0;
+  background: white;
+}
+
+#context_menu ul {
+  padding-left: 0;
+  width: 120px;
+  text-align: center;
+}
+
+#context_menu li {
+  margin: 0;
+  border-radius: 0;
+  background: #FFD4B0;
+
+}

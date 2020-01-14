@@ -1,0 +1,41 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+fieldset.scheduleField {
+  border: 1px solid #99E8CF;
+  width: 275px;
+  border-radius: 5px;
+  background: #99E8CF
+}
+
+dl.scheduleField {
+  display: flex;
+  margin: 10px;
+  
+}
+
+dd {
+  margin: 10px 0;
+}
+
+input {
+  width: 200px;
+}
+
+fieldset.studentField {
+  margin-top: 20px;
+  width: 275px;
+  border: 1px solid #A8D4FF;
+  background: #A8D4FF;
+  border-radius: 5px;
+}
+
+.smallInput {
+  width: 50px;
+}

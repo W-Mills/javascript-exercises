@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Booking Time Slots</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="javascripts/handlebars-v4.1.2.js"></script>
+    <script src="javascripts/bookingTimeSlots.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Schedules</h1>
+    </header>
+    <fieldset class="scheduleField">
+      <form>
+        <dl>
+          <dt>Please Select A Schedule:</dt>
+          <dd>
+            <select name="schedules" id="schedules">
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>Email:</dt>
+          <dd>
+            <input id="email" type="text">
+          </dd>
+        </dl>
+        <button id="schedule_request">Submit</button>
+      </form>
+    </fieldset>
+    <script id="options_template" type="text/x-handlebars-template">
+      <option value="{{schedule_id}}">{{opt_value}}</option>
+    </script>
+    <script id="email_template" type="text/x-handlebars-template">
+      <fieldset class="studentField">
+        <form id="register_new_student">
+          <h2>Register Student:</h2>
+          <dl>
+            <dt>Email:</dt>
+            <dd>
+              <input name="email" id="studentEmail" value="{{studentEmail}}" type="text" required>
+            </dd>
+            <dt>Name:</dt>
+            <dd>
+              <input name="name" id="studentName" type="text" required>
+            </dd>
+            <dt>Booking Sequence:</dt>
+            <dd>
+              <input class="smallInput" name="booking_sequence" value="{{bookingSequence}}" type="text" required>
+            </dd>
+          </dl>
+          <button id="registerStudent">Register Student</button>
+        </form>
+      </fieldset>
+    </script>
+  </body>
+</html>

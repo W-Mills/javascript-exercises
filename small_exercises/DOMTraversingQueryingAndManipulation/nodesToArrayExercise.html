@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Nodes to Array</title>
+  </head>
+  <body>
+    <header id="1"></header>
+    <main id="2"></main>
+    <footer id="3"></footer>
+  </body>
+</html>
+
+
+
+<!-- <script>
+  // good solution by Bharat Agarwal
+
+  function nodesToArr() {
+    return recurse(document.body);
+  }
+    
+  function recurse(node) {
+    if (node.children.length === 0) {
+      return [node.tagName, []];
+    }
+
+    return [node.tagName, 
+            Array.from(node.children).map(node => {
+              return recurse(node);
+            })];
+  }
+
+  console.log(nodesToArr());
+</script> -->

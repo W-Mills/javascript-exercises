@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Programming Languages</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="handlebars-v4.1.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="programming_languages.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Learn About Programming:</h1>
+    </header>
+    <section id="languages"></section>
+    <script id="article_template" type="text/x-handlebars-template">
+      <article data-lang="{{language}}">
+        <h2>{{language_capitalized}}</h2>
+          <div>
+            <p></p>
+            <button>Show More</button>
+          </div>
+      </article>
+    </script>
+  </body>
+</html>

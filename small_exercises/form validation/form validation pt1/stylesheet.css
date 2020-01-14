@@ -1,0 +1,90 @@
+body, html {
+  font-family: 'Exo 2', sans-serif;
+  background: #FFEBBD;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  margin: 40px;
+  font-size: 32px;
+}
+
+fieldset {
+  width: 550px;
+  border: none;
+  margin: 0 auto;
+  background: #FFCB95;
+  border-radius: 5px;
+}
+
+input {
+  flex: 0 0 200px;
+}
+
+form {
+  padding: 10px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+form div:last-of-type {
+  margin: 20px 0 20px 184px;
+}
+
+button {
+  background: #CDFDFE;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 10px 0 0 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 1px solid #FFCB95;
+}
+
+button:focus {
+  background: white;
+}
+
+input:focus {
+  outline: 1px solid green;
+}
+
+.invalid_field {
+  outline: 1px solid red;
+}
+
+span {
+  margin-left: 10px;
+  vertical-align: center;
+}
+
+dl {
+  margin: 10px;
+}
+
+.error_message,
+#form_message {
+  color: red;
+}
+
+#form_message_div {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#form_message {
+  font-size: 20px;
+  justify-self: center;
+}

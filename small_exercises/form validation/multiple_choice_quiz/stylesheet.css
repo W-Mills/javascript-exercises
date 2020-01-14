@@ -1,0 +1,79 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
+fieldset {
+  margin: 30px;
+}
+
+form {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  width: 700px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+button {
+  margin: 0 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background: yellow;
+}
+
+#quizReset:hover {
+  background: red;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="radio"] {
+  margin: 10px;
+}
+
+.question {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.result {
+  text-align: center;
+  font-weight: 600;
+}
+
+.needAnswer {
+  border: 1px solid orange;
+}
+
+.needAnswer > .result {
+  color: orange;
+}
+
+.wrongAnswer {
+  border: 1px solid red;
+}
+
+.wrongAnswer > .result {
+  color: red;
+}
+
+.correctAnswer {
+  border: 1px solid green;
+}
+
+.correctAnswer > .result {
+  color: green;
+}
+
